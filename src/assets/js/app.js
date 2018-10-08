@@ -5,6 +5,8 @@ var streamlist;
 let cardlist = [];
 let ignorelist = new Set();
 ignorelist.add('SG_Batman');
+ignorelist.add('Luckyluciano901');
+ignorelist.add('sG_erniie');
 
 $(document).ready(function() {
   $.ajax({
