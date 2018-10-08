@@ -26,6 +26,29 @@ h1 {
   font-size: 48px;
 }
 
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info a {
+  color: #6441A4;
+}
+
+.info p {
+  margin: 0;
+}
+
+.info h3 {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.info__author {
+  text-align: right;
+}
+
 .card {
   background-color: #fff;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07);
@@ -54,4 +77,11 @@ h1 {
 .card .card__info {
   display: flex;
   justify-content: space-between;
+}
+
+/* Just to target the kofi button */
+.btn-container {
+  position: fixed;
+  bottom: 20px;
+  right: 100px;
 }
