@@ -8,6 +8,10 @@ a {
   text-decoration: none;
 }
 
+#info {
+  width: 800px;
+}
+
 .card {
   background-color: #fff;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07);
