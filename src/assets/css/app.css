@@ -12,6 +12,10 @@ a {
   width: 800px;
 }
 
+h1 {
+  font-size: 48px;
+}
+
 .card {
   background-color: #fff;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07);
