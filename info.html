@@ -21,6 +21,10 @@
       Should you find a false match, just drop us a message. 
       <h2>How do I get included into the list?</h2>
       Make sure you include 'SG/EN' as part of your stream title, optionally, 'SG' itself may also work but with no guarantee. If you have the correct stream title but still can't get it to work, let me know.
+      <h2>What about teams?</h2>
+      Thought about that and since Twitch API v5 doesn't really have a fast enough option to only grab live streams within a team, we should maybe await the new API for that functionality.
+      <p/>
+      i.e. Team Singapore Streamers has about 230 channels, but usually less than 10 streams online at any point in time. Using the current API, we would have to loop through the users, get their ID, check for their streaming status using the ID and decide whether to display that stream. The issue here is that we will be wasting 220 iterations of API calls searching through dead and offline channels which doesn't really make sense. 
       <h2>Disclaimer</h2>
       We do not represent Twitch or aim to misguide users into thinking we are representing them. This is just a side project for ourselves that others may find useful. All images and assets are obtained from the Twitch API. 
       <h2>Contact</h2>
