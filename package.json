@@ -1,0 +1,18 @@
+{
+  "name": "twitch",
+  "version": "1.0.0",
+  "description": "Helps to look through online Twitch streams and segregate them into their regions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Twitch",
+    "stream"
+  ],
+  "author": "Sheryl, Nick",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^2.0.3"
+  }
+}
