@@ -2,6 +2,7 @@ var clientId = "gcev1q07pomapbs57dl58z2viwec0t";
 var search = "https://api.twitch.tv/kraken/search/streams?query=sg/en&limit=100&offset=0";
 var encoded = encodeURIComponent(search);
 var streamlist;
+let cardlist = [];
 let ignorelist = new Set();
 ignorelist.add('SG_Batman');
 
@@ -18,12 +19,18 @@ $(document).ready(function() {
         streamlist = data.streams;
         for (var i = 0; i < streamlist.length; i++){
           if (!ignorelist.has(streamlist[i].channel.display_name)) {
-            $('.game').append('<div class="col"><a href="' + streamlist[i].channel.url + '" target="_blank"><article class="card"><img src="' + streamlist[i].preview.medium + '"><div class="card__content"><h2>' + streamlist[i].channel.status + '</h2><p class="streamer"><strong>' + streamlist[i].channel.display_name + '</strong></p><p class="description"><i>' + streamlist[i].game + '</i></p><p class="viewers"><strong>Viewers: </strong>' + streamlist[i].viewers + '</p></article></a></div>');
+            addCard(streamlist[i].preview.medium, streamlist[i].channel.display_name, streamlist[i].game, streamlist[i].channel.status, streamlist[i].channel.url, streamlist[i].viewers);
           }
         }
+
+        $('.game').append(cardlist);
       },
       error: function() {
-          alert(search);
+        console.log(search);
       }
   });
 });
+
+function addCard(image, name, game, title, url, viewers) {
+  cardlist.push('<div class="col"><article class="card"><img src="' + image + '"><div class="card__content"><a href="' + url + '" target="_blank"><h2>' + title + '</h2></a><div class="card__info"><a href="' + url + '" target="_blank"><span class="card__streamer"><i class="fab fa-twitch"></i> ' + name + '</span></a><span class="card__viewers">' + viewers +' <i class="far fa-user"></i></span></div><p class="card__game"><strong>Playing: </strong>' + game + '</p></div></article></div>');
+}

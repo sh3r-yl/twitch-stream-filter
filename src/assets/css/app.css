@@ -5,7 +5,17 @@ body {
 }
 
 a {
+  color: #333;
   text-decoration: none;
+  transition: 0.2s ease all;
+}
+
+a:hover {
+  color: #6441A4;
+}
+
+.fa-twitch {
+  color: #6441A4;
 }
 
 #info {
@@ -29,10 +39,6 @@ h1 {
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.07);
 }
 
-.card:hover h2 {
-  color: #666;
-}
-
 .card img {
   width: 100%;
 }
@@ -42,5 +48,10 @@ h1 {
 }
 
 .card .card__content h2 {
-  font-size: 32px;
+  font-size: 24px;
+}
+
+.card .card__info {
+  display: flex;
+  justify-content: space-between;
 }
