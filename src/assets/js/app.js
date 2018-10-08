@@ -24,8 +24,12 @@ $(document).ready(function() {
             addCard(streamlist[i].preview.medium, streamlist[i].channel.display_name, streamlist[i].game, streamlist[i].channel.status, streamlist[i].channel.url, streamlist[i].viewers);
           }
         }
-
-        $('.game').append(cardlist);
+        if (cardlist.length > 0) { 
+          $('.game').append(cardlist);
+        }
+        else {
+          $('.game').append('<div id="noone"><h2>Sorry no one streaming at the moment...</h2></div>');
+        }
       },
       error: function() {
         console.log(search);
