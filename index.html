@@ -43,7 +43,10 @@
       <h2>What about teams?</h2>
       <p>Thought about that and since Twitch API v5 doesn't really have a fast enough option to only grab live streams within a team, we should maybe await the new API for that functionality.</p>
       <p>i.e. Team Singapore Streamers has about 230 channels, but usually less than 10 streams online at any point in time. Using the current API, we would have to loop through the users, get their ID, check for their streaming status using the ID and decide whether to display that stream. The issue here is that we will be wasting 220 iterations of API calls searching through dead and offline channels which doesn't really make sense.</p>
-
+      
+      <h2>This stream don't belong here!</h2>
+      <p>We understand that Twitch search API is limited and currently we're only using the Search API for gathering results. Which also means, that we will also pick up streamers who title their stream 'SG' doing speedruns from all over the world, clan names, team names consisting of SG, and the list goes on. Drop us a message if you notice a stream that doesn't belong here and we can add it to the "ignore list". Currently it's a very naive way of doing things, but we'll see what the new Helix API has to offer!</p>
+      
       <h2>Disclaimer</h2>
       <p>We do not represent Twitch or aim to misguide users into thinking we are representing them. This is just a side project for ourselves that others may find useful. All images and assets are obtained from the Twitch API.</p>
 
