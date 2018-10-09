@@ -7,6 +7,14 @@ let ignorelist = new Set();
 ignorelist.add('SG_Batman');
 ignorelist.add('Luckyluciano901');
 ignorelist.add('sG_erniie');
+ignorelist.add('Bern_The_Witch');
+ignorelist.add('CliffordTBRD');
+ignorelist.add('Edge0fHeaven');
+ignorelist.add('AUS_SG_117');
+ignorelist.add('sgkekster');
+ignorelist.add('sg_twist');
+ignorelist.add('LittleMasky');
+ignorelist.add('Zer0rush');
 
 $(document).ready(function() {
   $.ajax({
