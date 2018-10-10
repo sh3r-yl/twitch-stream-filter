@@ -119,4 +119,5 @@ function populate() {
   blacklist('sg_unlocky');
   blacklist('jacobyyy18');
   blacklist('SG_Meezus');
+  blacklist('yggutta500');
 }
