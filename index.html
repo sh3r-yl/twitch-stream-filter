@@ -39,14 +39,16 @@
       <p>Should you find a false match, just drop us a message.</p>
 
       <h2>How do I get included into the list?</h2>
-      <p>Make sure you include 'SG/EN' as part of your stream title, optionally, 'SG' itself may also work but with no guarantee. If you have the correct stream title but still can't get it to work, let me know.</p>
+      <p>Make sure you include 'SG/EN' or 'SG' as part of your stream title, optionally, 'SG' itself may work but with no guarantee. If you have the correct stream title but still can't get it to work, let me know.</p>
 
       <h2>What about SG teams?</h2>
       <p>Thought about that and since Twitch API v5 doesn't really have a fast enough option to only grab live streams within a team, we should maybe await the new API for that functionality.</p>
       <p>i.e. <a href="https://www.twitch.tv/team/sg" target="_blank">Team Singapore Streamers</a> has about 230 channels, but usually less than 10 streams online at any point in time. Using the current API, we would have to loop through the users, get their ID, check for their streaming status using the ID and decide whether to display that stream. The issue here is that we will be wasting 220 iterations of API calls searching through dead and offline channels which doesn't really make sense.</p>
+      <p>If you have any suggestions, feel free to drop us a message.</p>
       
       <h2>This stream doesn't belong here!</h2>
       <p>We are aware of false matches and streamers that don't necessarily be based in Singapore appearing from time to time. We are using Twitch API v5's Search API to gather results, which is rather limited by itself. This means that we will pick up streamers all over the world who title their stream 'SG' (mostly speedrunners), clan names, team names consisting of 'SG', and the list goes on.</p>
+      <p>An initial weeding process will be done to remove streams that are obviously not Singaporean and boost streams that are obviously Singaporean; this is a work in progress and do expect false entries.</p>
       <p>Drop us a message if you notice a stream that doesn't belong here and we can add it to the "ignore list". It's a very naive way of doing things, but since the API v5 is deprecated, we'll see what the new Helix API has to offer before we explore further algorithmic changes!</p>
       
       <h2>Disclaimer</h2>
