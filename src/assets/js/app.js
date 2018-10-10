@@ -120,4 +120,10 @@ function populate() {
   blacklist('jacobyyy18');
   blacklist('SG_Meezus');
   blacklist('yggutta500');
+  blacklist('jeffery_murphy');
+  blacklist('sg_electric');
+  blacklist('almightykingsav');
+  blacklist('sgingravity');
+  blacklist('jasminemorte');
+  blacklist('dotatv247');
 }
